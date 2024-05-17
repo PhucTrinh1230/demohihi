@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 </head>
 <body>
-    
+    <div id="root"></div>
     <script>
         //Su dung document create ( DOM )
         const h1 = document.createElement('h1')
@@ -21,7 +21,7 @@
 
         //Su dung react 
         //React.createElement(type,props,children, children n)
-        const h1React = React.createElement('h1',
+        const h1React = React.createElement( 'h1',
         {
             //props
             title:'Hello',
@@ -30,16 +30,53 @@
             //children
         }, 'Hello Guys')
 
-        console.log(h1)
-        console.log(h1React)
+        // console.log(h1)
+        // console.log(h1React)
 
 
            //Su dung document create ( DOM )
+                                                                                                                                        
+
+        //Bai 2 
+        const postItem = React.createElement(
+            'div',
+            {
+                className:'post-item'
+            },
+            React.createElement(
+                'h2',
+                {
+                    title:'Hoc ReactJs'
+                },'Hoc reactJs'
+            ), 
+            React.createElement(
+                'p',
+                {
+                    
+                },
+                'Tu co ban toi nang cao'
+            )
+        )
+ console.log(postItem)
+ const container = document.getElementById('root')
+ //React @17
+ //ReactDOM.render(postItem,container)
+
+
+ //React @18
+ const root = ReactDOM.createRoot(container)
+ root.render(postItem)
 
 
 
 
 
+                //Bai 3
+                const ul = React.createElement('ul',null,
+                    React.createElement('li',null,'JavaScript'),
+                    React.createElement('li',null,'ReactJS'),
+                )
+                root.render(ul)
     </script>
 </body>
 </html>
