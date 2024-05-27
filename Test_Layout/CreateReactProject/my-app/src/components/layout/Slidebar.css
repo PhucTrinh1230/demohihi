@@ -1,0 +1,43 @@
+.panel-title{
+   text-align: center;
+    padding-top: 40px; /* Offset to accommodate fixed header */
+
+}
+
+.list-group{
+    max-height: 500px;
+    margin-bottom: 10px;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 30px; 
+}
+
+.panel-primary
+{
+    margin-top: 30px;
+}
+
+/* styles.css */
+nav>a{
+    color: black; /* Màu sắc của liên kết */
+    text-decoration: none; /* Bỏ gạch chân mặc định */
+   border-bottom: black solid 1px;
+   border-left: black solid 1px;
+   border-right: black solid 1px;
+    padding: 5px; /* Thêm khoảng đệm */
+    display: block; /* Hiển thị như khối để dễ dàng điều chỉnh khoảng cách */
+  }
+  
+  nav>a:hover {
+    color: rgb(8, 8, 180); /* Màu sắc khi hover */
+    background-color: rgb(224, 212, 212);
+    
+  }
+
+  .list-group-item{
+    border: black solid 2px;
+    background-color: rgb(232, 232, 241);
+    border-radius: 3px;
+    text-align: center;
+  }
+

@@ -1,0 +1,36 @@
+
+
+
+.content {
+    padding: 10px;
+    padding-top: 70px; /* Offset to accommodate fixed header */
+    margin-left: 1%;
+
+}
+.row {
+    margin-top: 20px;
+}
+
+p {
+    max-height: 40px;
+}
+
+.content-2>img {
+    width: 100%;
+}
+
+.content-2>.chuthich {
+    font-size: small;
+    margin-left: 35%;
+    color: gray;
+}
+
+.button-group
+{
+    margin-left: 40%;
+   
+}
+.button-group>.btn-dark
+{
+    margin: 10px;
+}

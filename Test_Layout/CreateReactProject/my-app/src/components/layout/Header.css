@@ -1,0 +1,40 @@
+
+.header {
+  top: 0;
+ position: fixed;
+ width: 1285px;
+  height: 70px;
+  box-sizing: border-box;
+  background-color: white;
+  z-index: 100;
+ 
+}
+
+
+.header>img{
+ width: 200px;  
+ height: 70px; 
+}
+
+
+  .search-bar {
+    position: relative;
+    margin: 10px;
+    width: 250px;
+    margin-left: 58%;
+    margin-top: -60px;
+    
+   
+  }
+  .search-input{
+    border-radius: 5%;
+    border-style: solid;
+  }
+  .btn-light{
+    margin-right: 10px;
+  }
+  .flex-nowrap
+  {
+    margin-top: -39px;
+    margin-left: 100px;
+  }
