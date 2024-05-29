@@ -30,7 +30,7 @@ nav>a{
   
   nav>a:hover {
     color: rgb(8, 8, 180); /* Màu sắc khi hover */
-    background-color: rgb(224, 212, 212);
+    background-color:  rgb(232, 232, 241);
     
   }
 
@@ -41,3 +41,9 @@ nav>a{
     text-align: center;
   }
 
+.active
+{
+  background-color: rgb(156, 156, 170);
+  font-style: oblique;
+  font-weight: bold;
+}
